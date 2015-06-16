@@ -1,2 +1,2 @@
 # rss-youtuber
-Get Youtube playlist videos formatted as rss feed.
+Get a Youtube playlist videos formatted as rss feed.
