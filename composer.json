@@ -1,0 +1,20 @@
+{
+    "name": "mednix/rss-youtuber",
+    "require": {
+        "madcoda/php-youtube-api": "^1.1",
+        "suin/php-rss-writer": "^1.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mednix",
+            "email": "med.programmer@gmail.com"
+        }
+    ],
+  "autoload": {
+    "psr-4": {
+      "RssYoutuber\\":"src/"
+    }
+  },
+    "minimum-stability": "stable"
+}
