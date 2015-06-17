@@ -43,7 +43,7 @@ class Playlist
             $item->title($video->snippet->title)
                 ->description($video->snippet->description)
                 ->url('http://www.youtube.com/v/'.$video->snippet->resourceId->videoId)
-                ->pubDate($video->snippet->publishedAt)
+                //->pubDate($video->snippet->publishedAt)
                 ->enclosure($video->snippet->thumbnails->default->url, 10000, 'image/jpeg')
                 ->appendTo($channel);
         }
