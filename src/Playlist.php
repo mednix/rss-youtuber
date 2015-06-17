@@ -1,7 +1,9 @@
 <?php
 namespace RssYoutuber;
 
+use Suin\RSSWriter\Channel;
 use Suin\RSSWriter\Feed;
+use Suin\RSSWriter\Item;
 
 class Playlist
 {

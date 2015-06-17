@@ -1,6 +1,9 @@
 <?php
-error_reporting(-1);
-ini_set('display_errors', 'On');
+const DEBUG=true;
+if(DEBUG==true){
+    error_reporting(-1);
+    ini_set('display_errors', 'On');
+}
 
 require 'vendor/autoload.php';
 
