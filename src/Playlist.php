@@ -44,7 +44,7 @@ class Playlist
                 ->description($video->snippet->description)
                 ->url('http://www.youtube.com/v/'.$video->snippet->resourceId->videoId)
                 ->pubDate($video->snippet->publishedAt)
-                ->enclosure($video->snippet->thumbnails->default->url,null,'image/jpeg')
+                ->enclosure($video->snippet->thumbnails->default->url, 10000, 'image/jpeg')
                 ->appendTo($channel);
         }
         return $feed->render();
