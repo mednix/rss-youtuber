@@ -8,7 +8,12 @@ if(DEBUG==true){
 require 'vendor/autoload.php';
 
 $key='AIzaSyAhYKR543743GnhQmNwIhxULVinpftfIKU';
-$id='PL784A9CFA20E3E33C';
+if(empty($_GET['playlist'])){
+    $id=$id='PL784A9CFA20E3E33C';
+}
+else{
+    $id=$_GET['playlist'];
+}
 
 $client=new \RssYoutuber\Client($key);
 $playlist=new \RssYoutuber\Playlist($client);
