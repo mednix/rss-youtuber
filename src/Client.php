@@ -16,7 +16,7 @@ class Client
     public function playlist($id)
     {
         $playlist=new \stdClass();
-        $playlist->videos= $this->youtube->getPlaylistItemsByPlaylistId($id, 100);
+        $playlist->videos= $this->youtube->getPlaylistItemsByPlaylistId($id);
         return $playlist;
     }
 }
