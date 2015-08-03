@@ -7,7 +7,7 @@ if(DEBUG==true){
 
 require 'vendor/autoload.php';
 
-$key='AIzaSyAhYKR543743GnhQmNwIhxULVinpftfIKU';
+$key='AIzaSyDxaXsAF1sGe1YYImhRXOrudKZpOZFVv1U';
 if(empty($_GET['playlist'])){
     $id=$id='PL784A9CFA20E3E33C';
 }
