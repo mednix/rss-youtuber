@@ -40,11 +40,12 @@ class Playlist
             ->appendTo($feed);
         foreach($this->videos as $video){
             $item = new Item();
+            $thumbnail=!empty($video->snippet->thumbnails)?$video->snippet->thumbnails->default->url: 'https://c1.staticflickr.com/3/2210/2400278641_a0ce6c1511.jpg';
             $item->title($video->snippet->title)
                 ->description($video->snippet->description)
                 ->url('http://www.youtube.com/v/'.$video->snippet->resourceId->videoId)
                 //->pubDate($video->snippet->publishedAt)
-                ->enclosure($video->snippet->thumbnails->default->url, 10000, 'image/jpeg')
+                ->enclosure($thumbnail, 10000, 'image/jpeg')
                 ->appendTo($channel);
         }
         return $feed->render();

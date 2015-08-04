@@ -1,5 +1,6 @@
 <?php
-const DEBUG=true;
+const DEBUG=false;
+ini_set('curl.cainfo', '/cacert.pem');
 if(DEBUG==true){
     error_reporting(-1);
     ini_set('display_errors', 'On');
@@ -21,5 +22,5 @@ $rss=$playlist->id($id)
     ->fetch()
     ->toRss();
 
-header('Content-Type: application/xml');
+//header('Content-Type: application/xml');
 echo $rss;
